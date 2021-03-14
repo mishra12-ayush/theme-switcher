@@ -1,0 +1,84 @@
+.theme-light {
+    --primary: #fff;
+    --secondary: rgb(212, 212, 212);
+    --feature: rgb(9, 182, 9);
+    --font-color: rgb(22, 22, 22);
+}
+.theme-dark {
+    --primary: rgb(36, 36, 36);
+    --secondary: rgb(88, 88, 88);
+    --feature: rgb(9, 182, 9);
+    --font-color: rgb(245, 245, 245);
+}
+.theme-purple {
+    --primary: rgb(44, 1, 61);
+    --secondary: rgb(62, 23, 85);
+    --feature: rgb(216, 60, 255);
+    --font-color: rgb(245, 245, 245);
+}
+.theme-wood {
+    --primary: rgb(104, 72, 3);
+    --secondary: rgb(131, 111, 46);
+    --feature: rgb(223, 155, 8);
+    --font-color: rgb(15, 15, 15);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body { background-color: var(--primary); }
+.logo {
+    font-family: 'Bangers', cursive;
+    font-family: 'Fjalla One', sans-serif; font-weight: 800; font-size: 40px; 
+    margin: 15px; color: var(--feature);
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 15px;
+}
+ nav ul  li {
+     display: inline-block;
+     margin-left: 25px;
+ }
+ nav ul {
+     list-style-type: none;
+      margin: 15px;
+      color: var(--font-color);
+      font-family: 'Fjalla One', sans-serif;
+ }
+ nav ul select {
+        margin-left: 25px;
+        margin-right: 25px;
+        display: inline-block;
+        width: 160px;
+        padding: 10px;
+        outline: none;
+        border: none; border-radius: 15px;
+        background-color: var(--secondary);
+    }
+.main {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.pic img {
+    width: 100%; 
+    position: relative;
+    left: 90px; top: 60px;  
+}
+.pic {
+    width: 700px;
+}
+.matter { font-family: 'Noto Sans JP', sans-serif; padding: 10px; margin-top: 100px; color: var(--font-color); }
+.btn {
+    background-color: var(--feature);
+    padding: 10px;
+    width: 100px;
+    border: none; border-radius: 20px;
+    font-size: larger;
+}
+.below {
+    background-color: var(--secondary); height: 700px;
+}
